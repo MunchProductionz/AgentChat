@@ -35,7 +35,11 @@ Conda environment created according to [this guide](https://conda.io/projects/co
 
 ### Why?
 
-Sensitive information should not be available in a public repository. To avoid it being push to Github, add the filesname to the `.gitignore` file.
+Sensitive information should not be available in a public repository. To avoid it being push to Github:
+
+1. Add the filename to the `.gitignore` file.
+2. Push the change to the `.gitignore` file.
+3. Push the change to the sensistive file.
 
 ## Virtual environment (TODO: UPDATE THIS)
 

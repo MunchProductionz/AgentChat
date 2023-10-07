@@ -1,7 +1,7 @@
 # AgentChat
 
 A project to learn about LLM Agents and their capabilities:
-- Python 3.9.13
+- Python 3.12.0
 - React/TypeScript
 - Python
 - _PostgreSQL?_
@@ -16,26 +16,34 @@ Python is bad at managing dependencies, especially when everything is run at a g
 
 ### Conda environment setup
 
-Conda environment created according to [this guide](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#starting-conda)
+Conda environment created according to [this guide](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#starting-conda) and [this guide](https://saturncloud.io/blog/how-to-pip-install-a-package-under-a-conda-virtual-environment/).
 
 1. Download Conda.
 2. Open the Anaconda prompt (Anaconda terminal).
 3. Setup a conda environment:
-    - `conda create --name <environment name> python` \
+    - `conda create --name <environment name>` \
     - `Proceed ([y]/n)?` -> `Enter`
 4. Activate it:
-    - `conda activate agentchat`
+    - `conda activate agentchat`.
     - if successful you terminal should look like this: `(<environment name) C:\`
-5. Install packages using `conda install <packages>`
-    - This should automatically install all relevant packages
-6. Run program
-7. Deactivate virtual environment with `conda deactivate`
+5. Ensure pip version is up-to-date using `pip install --upgrade pip`.
+6. Install packages using `pip install <packages>`:
+    - `python`
+    - `jupyter`
+    - `autogen`
+    - `langchain`
+7. Run program.
+8. Deactivate virtual environment with `conda deactivate`.
 
 ## GitIgnore
 
 ### Why?
 
-Sensitive information should not be available in a public repository. To avoid it being push to Github, add the filesname to the `.gitignore` file.
+Sensitive information should not be available in a public repository. To avoid it being push to Github:
+
+1. Add the filename to the `.gitignore` file.
+2. Push the change to the `.gitignore` file.
+3. Push the change to the sensistive file.
 
 ## Virtual environment (TODO: UPDATE THIS)
 

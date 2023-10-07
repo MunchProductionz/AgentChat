@@ -1,7 +1,7 @@
 # AgentChat
 
 A project to learn about LLM Agents and their capabilities:
-- Python 3.9.13
+- Python 3.12.0
 - React/TypeScript
 - Python
 - _PostgreSQL?_

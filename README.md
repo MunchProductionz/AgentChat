@@ -8,6 +8,35 @@ A project to learn about LLM Agents and their capabilities:
 
 ---
 
+## Conda environment
+
+### Why?
+
+Python is bad at managing dependencies, especially when everything is run at a global level. We use conda environments to get around this.
+
+### Conda environment setup
+
+Conda environment created according to [this guide](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#starting-conda)
+
+1. Download Conda.
+2. Open the Anaconda prompt (Anaconda terminal).
+3. Setup a conda environment:
+    - `conda create --name <environment name> python` \
+    - `Proceed ([y]/n)?` -> `Enter`
+4. Activate it:
+    - `conda activate agentchat`
+    - if successful you terminal should look like this: `(<environment name) C:\`
+5. Install packages using `conda install <packages>`
+    - This should automatically install all relevant packages
+6. Run program
+7. Deactivate virtual environment with `conda deactivate`
+
+## GitIgnore
+
+### Why?
+
+Sensitive information should not be available in a public repository. To avoid it being push to Github, add the filesname to the `.gitignore` file.
+
 ## Virtual environment (TODO: UPDATE THIS)
 
 ### Y though?

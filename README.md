@@ -28,6 +28,10 @@ Conda environment created according to [this guide](https://conda.io/projects/co
     - if successful you terminal should look like this: `(<environment name) C:\`
 5. Ensure pip version is up-to-date using `pip install --upgrade pip`.
 6. Install packages using `pip install <packages>`.
+    - `python`
+    - `jupyter`
+    - `autogen`
+    - `langchain`
 7. Run program
 8. Deactivate virtual environment with `conda deactivate`
 

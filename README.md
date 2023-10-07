@@ -24,16 +24,16 @@ Conda environment created according to [this guide](https://conda.io/projects/co
     - `conda create --name <environment name>` \
     - `Proceed ([y]/n)?` -> `Enter`
 4. Activate it:
-    - `conda activate agentchat`
+    - `conda activate agentchat`.
     - if successful you terminal should look like this: `(<environment name) C:\`
 5. Ensure pip version is up-to-date using `pip install --upgrade pip`.
-6. Install packages using `pip install <packages>`.
+6. Install packages using `pip install <packages>`:
     - `python`
     - `jupyter`
     - `autogen`
     - `langchain`
-7. Run program
-8. Deactivate virtual environment with `conda deactivate`
+7. Run program.
+8. Deactivate virtual environment with `conda deactivate`.
 
 ## GitIgnore
 

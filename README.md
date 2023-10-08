@@ -1,7 +1,7 @@
 # AgentChat
 
 A project to learn about LLM Agents and their capabilities:
-- Python 3.12.0
+- Python 3.10.13 (3.12 would not allow `pip install pyautogen`)
 - React/TypeScript
 - Python
 - _PostgreSQL?_
@@ -27,13 +27,16 @@ Conda environment created according to [this guide](https://conda.io/projects/co
     - `conda activate agentchat`.
     - if successful you terminal should look like this: `(<environment name) C:\`
 5. Ensure pip version is up-to-date using `pip install --upgrade pip`.
-6. Install packages using `pip install <packages>`:
+6. Ensure you have the latest conda version using `conda update -n base -c defaults conda` (might take some time).
+7. Install packages using `pip install <packages>`:
     - `python`
     - `jupyter`
     - `autogen`
+    - `pyautogen`
     - `langchain`
-7. Run program.
-8. Deactivate virtual environment with `conda deactivate`.
+    - `python-dotenv`
+8. Run program.
+9. Deactivate virtual environment with `conda deactivate`.
 
 ## GitIgnore
 

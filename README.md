@@ -117,6 +117,7 @@ Created using the following guides:
     - [GitLens - Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - General QoL:
     - [Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
+    - [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
     - [TODO Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
     - [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
     - [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)

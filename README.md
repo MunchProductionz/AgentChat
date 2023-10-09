@@ -35,6 +35,8 @@ Conda environment created according to [this guide](https://conda.io/projects/co
     - `pyautogen`
     - `langchain`
     - `python-dotenv`
+    - `wikipedia`
+    - `numexpr`
 8. Run program.
 9. Deactivate virtual environment with `conda deactivate`.
 

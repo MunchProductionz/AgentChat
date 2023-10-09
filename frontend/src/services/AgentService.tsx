@@ -1,7 +1,7 @@
 import { BACKEND_URL } from "../utils";
 import axios from "axios";
 
-const getAPIUrl = (id?: number) => {
+const getAPIUrl = () => {
     return `${BACKEND_URL}`;
 }
 

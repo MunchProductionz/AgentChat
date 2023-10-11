@@ -13,7 +13,7 @@ const Chat = () => {
         try {
             const response = await makeQuery(userQuery);
             const data = await response.data;
-            setApiResponse(data.response);
+            setApiResponse(data.agentResponse);
         } catch (error) {
             console.error(error);
         }

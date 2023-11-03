@@ -47,7 +47,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ---
 
-# Deployment
+## Deployment
 
 Used the following guides to deploy the webapp:
 - [AWS](https://www.youtube.com/watch?v=vBcnnsn8CxQ)

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { makeQuery } from "../../services/AgentService";
 
 const Chat = () => {
     const [userQuery, setUserQuery] = useState("");
@@ -10,9 +11,9 @@ const Chat = () => {
 
     const handleAskClick = async () => {
         try {
-            const response = await fetch(`API_URL?query=${userQuery}`);     // TODO: Use API-service function
-            const data = await response.json();
-            setApiResponse(data.response);
+            const response = await makeQuery(userQuery);
+            const data = await response.data;
+            setApiResponse(data.agentResponse);
         } catch (error) {
             console.error(error);
         }

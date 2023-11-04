@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "C:\\Users\\henri\\anaconda3\\envs\\agentchat310\\python.exe",
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.terminal.activateEnvironment": true,
+    "terminal.integrated.shell.windows": "C:\\Users\\henri\\anaconda3\\Scripts\\cmd.exe"
+}

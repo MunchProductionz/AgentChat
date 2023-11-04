@@ -7,7 +7,6 @@ annotated-types
 anyio
 appdirs
 async-timeout
-bzip2
 ca-certificates
 certifi
 charset-normalizer

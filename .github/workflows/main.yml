@@ -1,0 +1,91 @@
+name: CI
+
+# Define when to run the actions
+on:
+  push:
+    branches: ['master']
+  pull_request:
+    branches: ['master']
+
+# Setup the virtual environment and define the actions to run
+jobs:
+
+  # Setup environment, make necessary installs, define and run frontend tests
+  run-frontend-tests:
+    runs-on: ubuntu-latest
+
+    # Move to the correct directory (relative to root)
+    defaults:
+      run:
+        working-directory: ./frontend
+
+    # Workflow configuration for continuous integration
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Setup Node environment
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      # Cache dependencies to save time
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
+
+      # Install dependencies
+      - name: Install dependencies
+        run: yarn install
+
+      # Build the website for testing
+      - name: Test build
+        run: yarn build
+
+      # Run all tests
+      - name: Run tests
+        run: yarn test --watchAll=false --coverage -u
+
+      # Run unit tests (Could implement separately)
+      # Run integration tests (Could implement separately)
+
+
+  # Setup environment, make necessary installs, define and run backend tests
+  run-backend-tests:
+    runs-on: ubuntu-latest
+
+    # Move to the correct directory (relative to root)
+    defaults:
+      run:
+        working-directory: ./server
+
+    # Workflow configuration for continuous integration
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Setup Python environment
+      - name: Use Python 3.11.x
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11.x
+          cache: 'pip'  # Caching pip dependencies
+
+      # Install dependencies
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Run all tests in directory server/tests/
+      - name: Run tests
+        run: pytest tests/
+
+      # Run unit tests (Could implement separately)
+      # Run integration tests (Could implement separately)
+
+    
+    

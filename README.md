@@ -40,7 +40,7 @@ Conda environment created according to [this guide](https://conda.io/projects/co
 8. Run program.
 9. Deactivate virtual environment with `conda deactivate`.
 
-## GitIgnore
+## Gitignore
 
 ### Why?
 

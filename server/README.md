@@ -11,6 +11,9 @@ Import all necessary packages to your conda environment:
 
 - `fastapi`
 - `uvicorn`
+- `pydantic`
+- `pytest`
+- `httpx`
 
 Created the `requirements.txt` file using:
 

@@ -1,5 +1,11 @@
 # API
 
+## Running the API locally
+
+Run the API locally using:
+
+- `uvicorn api:app --reload`
+
 ## Endpoints
 
 ### Get()
